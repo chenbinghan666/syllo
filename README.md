@@ -4,7 +4,7 @@
 
 <h1 align="center">Syllo</h1>
 
-<p align="center">不想被 Moodle 的作业和 DDL 追着跑？我做了 Syllo：把 Moodle 的作业 DDL、通知、课件和成绩收进一个清爽桌面，帮大学生少翻页面、不漏任务。</p>
+<p align="center">在 Windows 桌面集中查看 Moodle 作业截止时间、通知、课件和成绩。</p>
 
 <p align="center">
   <strong>简体中文</strong> ·
