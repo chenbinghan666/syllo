@@ -4,7 +4,7 @@
 
 <h1 align="center">Syllo</h1>
 
-<p align="center">把分散在 Moodle 里的课程、作业、课件、公告、成绩和日程，收进一张 Windows 学习桌面。</p>
+<p align="center">不想被 Moodle 的作业和 DDL 追着跑？我做了 Syllo：把 Moodle 的作业 DDL、通知、课件和成绩收进一个清爽桌面，帮大学生少翻页面、不漏任务。</p>
 
 <p align="center">
   <strong>简体中文</strong> ·
