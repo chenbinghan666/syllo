@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-11-14T15:01:14.494407+00:00",
+  "site": "https://l.xmu.edu.my",
+  "configuration": {
+    "wwwroot": "https://l.xmu.edu.my",
+    "sitename": "Xiamen University Malaysia Moodle",
+    "enablewebservices": 1,
+    "enablemobilewebservice": 1,
+    "typeoflogin": 2,
+    "launchurl": "https://l.xmu.edu.my/admin/tool/mobile/launch.php",
+    "tool_mobile_disabledfeatures": "CoreBlockDelegate_AddonBlockMyOverview"
+  },
+  "login_mode": "external_browser",
+  "anonymous_probe_cors_allow_origin": null,
+  "account_authorization_tested": false,
+  "account_modules_tested": false,
+  "note": "Public configuration is not proof of account access or complete module coverage."
+}

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Syllo",
+  "version": "0.7.0",
+  "description": "A clearer personal Moodle homepage: calendar, assignments, notices, materials and grades. Unofficial XMUM project.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://l.xmu.edu.my/*"
+      ],
+      "js": [
+        "identity.js",
+        "visuals.js",
+        "theme.js",
+        "parser.js",
+        "semesters.js",
+        "board.js",
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/*.ttf",
+        "assets/*.woff2",
+        "assets/syllo-*.svg",
+        "assets/syllo-logo.png"
+      ],
+      "matches": [
+        "https://l.xmu.edu.my/*"
+      ]
+    }
+  ]
+}

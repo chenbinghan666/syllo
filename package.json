@@ -1,0 +1,10 @@
+{
+  "name": "syllo",
+  "private": true,
+  "version": "0.8.0",
+  "description": "Syllo desktop Moodle client with URL onboarding and official mobile API",
+  "scripts": {
+    "preview": "python -m http.server 8765 --bind 127.0.0.1"
+  },
+  "main": "desktop/main.cjs"
+}

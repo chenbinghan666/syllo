@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+.env*
+data/
+*.ics
+*.log
+browser-profile/
+node_modules/
+*.zip
+*.backup.js
+.dev/
+.agents/
+Syllo-v*/
+docs/screenshots/
+启动 Syllo.cmd
+
+releases/Syllo-Desktop-*/
+Syllo/
+*.enc
