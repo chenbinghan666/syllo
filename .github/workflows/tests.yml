@@ -22,3 +22,5 @@ jobs:
         run: node tests/sync-cache-tests.cjs
       - name: Window lifecycle
         run: node tests/window-lifecycle-tests.cjs
+      - name: Web session restoration
+        run: node tests/web-session-tests.cjs

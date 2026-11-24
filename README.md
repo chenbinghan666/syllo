@@ -27,7 +27,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2f343b?style=flat-square" alt="MIT License"></a>
 </p>
 
-> Syllo 是独立个人项目，不是学校或 Moodle 官方产品。当前完整验证环境为 XMUM；其他学校能否使用，取决于其 Moodle 是否开放官方移动端接口。
+> Syllo 是独立个人项目，不是学校或 Moodle 官方产品。当前有真实账号使用记录的学校为 XMUM（课程与成绩同步已验证，重启后免登录打开原页仍待实测确认）；其他学校能否使用，取决于其 Moodle 是否开放官方移动端接口。
 
 ## 实际操作演示
 
@@ -114,7 +114,7 @@ Syllo 启动时先显示最近一次加密快照，再按缓存时间决定是�
 ## 兼容性
 
 - Windows 10 / 11 x64
-- 当前完整验证：XMUM Moodle
+- 当前真实账号验证：XMUM Moodle（数据同步）
 - 需要学校启用 Moodle 官方移动端服务及相关 Web Service
 - 学校禁用接口、插件内容只存在于附件、或活动由外部平台托管时，可能只能读取部分元信息
 - 安装包与便携版当前均未代码签名

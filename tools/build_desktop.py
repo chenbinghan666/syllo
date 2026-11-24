@@ -1,6 +1,7 @@
 """Package the already-downloaded official Electron runtime and local Syllo sources."""
 from pathlib import Path
 import hashlib
+import json
 import shutil
 import urllib.request
 
@@ -11,7 +12,8 @@ filename = f'electron-v{version}-win32-x64.zip'
 checksums = urllib.request.urlopen(f'https://github.com/electron/electron/releases/download/v{version}/SHASUMS256.txt', timeout=30).read().decode()
 expected = next(line.split()[0] for line in checksums.splitlines() if line.split()[-1].lstrip('*') == filename)
 assert hashlib.sha256((cache / filename).read_bytes()).hexdigest() == expected, 'Electron checksum mismatch'
-destination = root / 'releases' / 'Syllo-Desktop-v0.8.0'
+app_version = json.loads((root / 'package.json').read_text(encoding='utf-8'))['version']
+destination = root / 'releases' / f'Syllo-Desktop-v{app_version}'
 shutil.copytree(cache / 'runtime', destination, dirs_exist_ok=True)
 electron = destination / 'electron.exe'
 if electron.exists():

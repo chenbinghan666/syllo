@@ -152,7 +152,8 @@ window.addEventListener('load',async()=>{
  check('manual schedule uses Malaysia time and appears on calendar',()=>{
   r.querySelector('[data-tab="calendar"]').click();
   const form=r.querySelector('#manual');form.elements.title.value='UI regression study session';
-  form.elements.when.value='2026-11-18T09:00';form.requestSubmit();
+  const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kuala_Lumpur',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  form.elements.when.value=today+'T09:00';form.requestSubmit();
   assert(r.textContent.includes('UI regression study session'),'manual event missing');
   const c=[...r.querySelectorAll('.calitem')].find(x=>x.textContent.includes('UI regression study session'));
   assert(c&&c.textContent.includes('09:00'),'wrong timezone or missing event');
